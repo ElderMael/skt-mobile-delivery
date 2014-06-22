@@ -1,5 +1,4 @@
 ((root) ->
-
   root.App = {} unless root.App?
 
   require.config(
@@ -28,12 +27,9 @@
     waitSeconds: 20
   )
 
-  require ['jquery', 'backbone', 'appRouter'], ($, Backbone, Router) ->
-
+  require ['jquery', 'backbone', 'appRouter', 'bootstrap'], ($, Backbone, Router) ->
     $(document).ready ->
-
       App.router = new Router()
       Backbone.history.start();
 
-    return
-)(this)
+    return)(this)

@@ -28,7 +28,7 @@
     },
     waitSeconds: 20
   });
-  return require(['jquery', 'backbone', 'appRouter'], function($, Backbone, Router) {
+  return require(['jquery', 'backbone', 'appRouter', 'bootstrap'], function($, Backbone, Router) {
     $(document).ready(function() {
       App.router = new Router();
       return Backbone.history.start();
