@@ -5,4 +5,5 @@ define ['backbone', 'handlebars', 'appTemplates'], (Backbone, Handlebars, templa
       this.model = {}
 
     render: ->
-      this.el = this.template this.model.toJSON()
+      this.el = this.template this.model
+      return this

@@ -5,7 +5,7 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
       '': 'index'
     },
     index: function() {
-      if (!App.mainView) {
+      if (App.mainView == null) {
         App.mainView = new Views.MainView();
       } else {
         App.mainView.delegateEvents();

@@ -6,7 +6,8 @@ define(['backbone', 'handlebars', 'appTemplates'], function(Backbone, Handlebars
       return this.model = {};
     },
     render: function() {
-      return this.el = this.template(this.model.toJSON());
+      this.el = this.template(this.model);
+      return this;
     }
   });
 });

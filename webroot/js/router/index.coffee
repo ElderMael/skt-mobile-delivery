@@ -6,7 +6,7 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
       '': 'index'
 
     index: ->
-      unless App.mainView
+      unless App.mainView?
         App.mainView = new Views.MainView()
       else
         App.mainView.delegateEvents()
