@@ -4,12 +4,8 @@ body {
 .logo {
   text-indent: -9999px;
   background: url("/img/logo.png") no-repeat;
-  background-size: 72.85px 47px; }
-
-.logo-img {
-  width: 72.85px;
-  height: 47px;
-  display: inline-block; }
+  background-size: 72.85px 47px;
+  margin-top: 10px; }
 
 main.content {
   padding-bottom: 80px; }
