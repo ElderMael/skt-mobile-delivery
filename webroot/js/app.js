@@ -10,7 +10,10 @@
       'underscore': '/vendors/underscore/underscore',
       'backbone': '/vendors/backbone/backbone',
       'bootstrap': '/vendors/bootstrap/dist/js/bootstrap',
-      'text': '/vendors/requirejs-text/text'
+      'text': '/vendors/requirejs-text/text',
+      'appRouter': '/js/router/index',
+      'appViews': '/js/views/index',
+      'appTemplates': '/js/templates/index'
     },
     shim: {
       'backbone': {
@@ -25,12 +28,10 @@
     },
     waitSeconds: 20
   });
-  return require(['jquery'], function($) {
-    App.$ = jQuery;
-    console.log("Hello, World!");
-    App.$(document).ready(function() {
-      console.log("Hello, World from jQuery");
-      return App.$('#hello-p').append('Hello, World from jQuery');
+  return require(['jquery', 'backbone', 'appRouter'], function($, Backbone, Router) {
+    $(document).ready(function() {
+      App.router = new Router();
+      return Backbone.history.start();
     });
   });
 })(this);

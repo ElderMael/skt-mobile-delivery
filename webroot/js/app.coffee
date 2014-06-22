@@ -11,6 +11,10 @@
       'bootstrap': '/vendors/bootstrap/dist/js/bootstrap',
       'text': '/vendors/requirejs-text/text'
 
+      'appRouter': '/js/router/index'
+      'appViews': '/js/views/index'
+      'appTemplates': '/js/templates/index'
+
     shim:
       'backbone':
         'deps': ['underscore', 'jquery']
@@ -24,15 +28,12 @@
     waitSeconds: 20
   )
 
-  require ['jquery'], ($) ->
+  require ['jquery', 'backbone', 'appRouter'], ($, Backbone, Router) ->
 
-    App.$ = jQuery
+    $(document).ready ->
 
-    console.log "Hello, World!"
-
-    App.$(document).ready ->
-      console.log "Hello, World from jQuery"
-      App.$('#hello-p').append 'Hello, World from jQuery'
+      App.router = new Router()
+      Backbone.history.start();
 
     return
 )(this)
