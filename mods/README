@@ -1,1 +1,2 @@
-The location that vertx uses to locate modules. See http://vertx.io/mods_manual.html#how-vertx-locates-modules for more details.
+The location that vertx uses to locate modules.
+See http://vertx.io/mods_manual.html#how-vertx-locates-modules for more details.

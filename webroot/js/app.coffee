@@ -13,7 +13,7 @@
 
       'appRouter': '/js/router/index'
       'appViews': '/js/views/index'
-      'appTemplates': '/js/templates/index'
+      'appTemplates': '/js/tpl/index'
 
     shim:
       'backbone':
