@@ -1,4 +1,5 @@
 ((root) ->
+
   root.App = {} unless root.App?
 
   require.config(
@@ -28,8 +29,11 @@
   )
 
   require ['jquery', 'backbone', 'appRouter', 'bootstrap'], ($, Backbone, Router) ->
+
     $(document).ready ->
+
       App.router = new Router()
       Backbone.history.start();
 
-    return)(this)
+    return
+)(this)

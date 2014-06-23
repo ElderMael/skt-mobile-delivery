@@ -1,4 +1,5 @@
-define ['/js/views/main.js'], (main) ->
+define ['/js/views/main.js', '/js/views/portfolio.js'], (main, portfolio) ->
   {
-    'MainView': main
+  'MainView': main
+  'PortfolioView': portfolio
   }

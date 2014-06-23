@@ -2,7 +2,8 @@
 define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
   return Backbone.Router.extend({
     routes: {
-      '': 'index'
+      '': 'index',
+      'portfolio': 'showPortfolio'
     },
     index: function() {
       if (App.mainView == null) {
@@ -11,6 +12,14 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
         App.mainView.delegateEvents();
       }
       return $('main.content > .container').html(App.mainView.render().el);
+    },
+    showPortfolio: function() {
+      if (App.portfolioView == null) {
+        App.portfolioView = new Views.PortfolioView();
+      } else {
+        App.portfolioView.delegateEvents();
+      }
+      return $('main.content > .container').html(App.portfolioView.render().el);
     }
   });
 });
