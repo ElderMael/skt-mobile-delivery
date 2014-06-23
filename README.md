@@ -1,3 +1,5 @@
-For more details about this cartridge please visit:
+##For more details about this cartridge please visit:
  
-https://github.com/vert-x/openshift-cartridge
+http://stkbrochure-arcanaweb.rhcloud.com/
+
+
