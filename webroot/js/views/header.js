@@ -5,9 +5,15 @@ define(['backbone', 'handlebars', 'appTemplates'], function(Backbone, Handlebars
     initialize: function() {
       return this.model = {};
     },
+    events: {
+      'click #navItems > ul > li': 'collapseMobileMenu'
+    },
     render: function() {
-      this.el = this.template(this.model);
+      this.$el.html(this.template(this.model));
       return this;
+    },
+    collapseMobileMenu: function() {
+      return $('#navItems').collapse('toggle');
     }
   });
 });

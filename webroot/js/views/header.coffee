@@ -4,6 +4,12 @@ define ['backbone', 'handlebars', 'appTemplates'], (Backbone, Handlebars, templa
     initialize: ->
       this.model = {}
 
+    events :
+      'click #navItems > ul > li': 'collapseMobileMenu'
+
     render: ->
-      this.el = this.template this.model
+      this.$el.html this.template this.model
       return this
+
+    collapseMobileMenu: ->
+      $('#navItems').collapse('toggle');

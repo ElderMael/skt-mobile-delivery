@@ -2,12 +2,11 @@
 define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
   return Backbone.Router.extend({
     initialize: function() {
-      if (App.headerView == null) {
-        App.headerView = new Views.HeaderView();
-      } else {
-        App.headerView.delegateEvents();
-      }
-      return $('header.content').html(App.headerView.render().el);
+      App.headerView = new Views.HeaderView({
+        el: 'header.content'
+      });
+      App.headerView.render();
+      return App.headerView.delegateEvents();
     },
     routes: {
       '': 'index',

@@ -1,12 +1,9 @@
 define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
   Backbone.Router.extend
     initialize: ->
-      unless App.headerView?
-        App.headerView = new Views.HeaderView()
-      else
-        App.headerView.delegateEvents()
-
-      $('header.content').html App.headerView.render().el
+      App.headerView = new Views.HeaderView({el: 'header.content' })
+      App.headerView.render()
+      App.headerView.delegateEvents()
 
     routes:
       '': 'index'
