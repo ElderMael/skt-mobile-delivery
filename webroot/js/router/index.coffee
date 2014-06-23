@@ -11,6 +11,7 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
     routes:
       '': 'index'
       'portfolio': 'showPortfolio'
+      'sap-erp': 'showSapErp'
 
     index: ->
       unless App.mainView?
@@ -27,3 +28,11 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
         App.portfolioView.delegateEvents()
 
       $('main.content > .container').html App.portfolioView.render().el
+
+    showSapErp: ->
+      unless App.sapErpView?
+        App.sapErpView = new Views.SapErpView();
+      else
+        App.sapErpView.delegateEvents()
+
+      $('main.content > .container').html App.sapErpView.render().el

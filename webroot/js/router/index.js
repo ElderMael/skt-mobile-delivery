@@ -11,7 +11,8 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
     },
     routes: {
       '': 'index',
-      'portfolio': 'showPortfolio'
+      'portfolio': 'showPortfolio',
+      'sap-erp': 'showSapErp'
     },
     index: function() {
       if (App.mainView == null) {
@@ -28,6 +29,14 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
         App.portfolioView.delegateEvents();
       }
       return $('main.content > .container').html(App.portfolioView.render().el);
+    },
+    showSapErp: function() {
+      if (App.sapErpView == null) {
+        App.sapErpView = new Views.SapErpView();
+      } else {
+        App.sapErpView.delegateEvents();
+      }
+      return $('main.content > .container').html(App.sapErpView.render().el);
     }
   });
 });
