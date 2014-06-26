@@ -41,11 +41,11 @@ body {
   padding-bottom: 15px; }
   .applicationsMaximized header h2 {
     margin-bottom: 30px;
-    padding-left: 5%; }
+    padding-left: 12%; }
 .applicationsMaximized main {
   background-color: white;
-  padding-left: 15%;
-  padding-right: 15%; }
+  padding-left: 12%;
+  padding-right: 16%; }
 
 @media (max-width: 480px) {
   #navItems {
@@ -62,7 +62,13 @@ body {
       padding: 20px 15px 15px 15px; }
 
   .navbar.navbar-header {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+
+  .applicationsMaximized header {
+    text-align: center; }
+  .applicationsMaximized main {
+    text-align: center;
+    padding: 5px; } }
 @media (max-width: 767px) {
   #navItems {
     background-color: white; }
@@ -78,4 +84,10 @@ body {
       padding: 20px 15px 15px 15px; }
 
   .navbar.navbar-header {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+
+  .applicationsMaximized header {
+    text-align: center; }
+  .applicationsMaximized main {
+    text-align: center;
+    padding: 5px; } }
