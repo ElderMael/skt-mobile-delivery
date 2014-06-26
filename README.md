@@ -1,4 +1,4 @@
-##For more details about this cartridge please visit:
+##Verticle for Softtek Brochures Practice
  
 http://stkbrochure-arcanaweb.rhcloud.com/
 
