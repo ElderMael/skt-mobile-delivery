@@ -16,7 +16,7 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
       else
         App.mainView.delegateEvents()
 
-      $('main.content > .container').html App.mainView.render().el
+      $('main.content > .display-content').html App.mainView.render().el
 
     showPortfolio: ->
       unless App.portfolioView?
@@ -24,7 +24,7 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
       else
         App.portfolioView.delegateEvents()
 
-      $('main.content > .container').html App.portfolioView.render().el
+      $('main.content > .display-content').html App.portfolioView.render().el
 
     showSapErp: ->
       unless App.sapErpView?
@@ -32,4 +32,4 @@ define ['backbone', 'jquery', 'appViews'], (Backbone, $, Views) ->
       else
         App.sapErpView.delegateEvents()
 
-      $('main.content > .container').html App.sapErpView.render().el
+      $('main.content > .display-content').html App.sapErpView.render().el

@@ -19,7 +19,7 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
       } else {
         App.mainView.delegateEvents();
       }
-      return $('main.content > .container').html(App.mainView.render().el);
+      return $('main.content > .display-content').html(App.mainView.render().el);
     },
     showPortfolio: function() {
       if (App.portfolioView == null) {
@@ -27,7 +27,7 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
       } else {
         App.portfolioView.delegateEvents();
       }
-      return $('main.content > .container').html(App.portfolioView.render().el);
+      return $('main.content > .display-content').html(App.portfolioView.render().el);
     },
     showSapErp: function() {
       if (App.sapErpView == null) {
@@ -35,7 +35,7 @@ define(['backbone', 'jquery', 'appViews'], function(Backbone, $, Views) {
       } else {
         App.sapErpView.delegateEvents();
       }
-      return $('main.content > .container').html(App.sapErpView.render().el);
+      return $('main.content > .display-content').html(App.sapErpView.render().el);
     }
   });
 });
