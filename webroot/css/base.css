@@ -96,7 +96,8 @@ body {
   .applicationsMaximized header {
     text-align: center; }
     .applicationsMaximized header h2 {
-      margin-left: 0px; }
+      margin-left: 0px;
+      padding-left: 0px; }
   .applicationsMaximized main {
     text-align: center;
     padding: 5px; } }
