@@ -70,6 +70,7 @@ body {
   .navbar.navbar-header {
     margin-bottom: 0px; } }
 .applicationsMaximized header {
+  font-face: "Oswald", sans-serif;
   color: white;
   background-color: #3f1e46;
   padding-top: 15px;
@@ -79,6 +80,7 @@ body {
     padding-left: 12%;
     font-family: "Oswald", sans-serif; }
 .applicationsMaximized main {
+  font-face: "Bree Serif", serif;
   background-color: white;
   padding-left: 12%;
   padding-right: 16%;
@@ -89,7 +91,7 @@ body {
     text-align: center; }
   .applicationsMaximized main {
     text-align: center;
-    padding: 5px; } }
+    padding: 0px; } }
 @media (max-width: 767px) {
   .applicationsMaximized header {
     text-align: center; }
