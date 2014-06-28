@@ -6,7 +6,8 @@ define(['backbone', 'handlebars', 'appTemplates'], function(Backbone, Handlebars
       return this.model = {};
     },
     events: {
-      'click #navItems > ul > li, .branding': 'collapseMobileMenu'
+      'click #navItems > ul > li': 'collapseMobileMenu',
+      'click .branding': 'goHome'
     },
     render: function() {
       this.$el.html(this.template(this.model));
@@ -16,6 +17,9 @@ define(['backbone', 'handlebars', 'appTemplates'], function(Backbone, Handlebars
       $('#navItems').collapse('toggle');
       $('#navItems > ul > li').removeClass('active');
       return $(e.currentTarget).addClass('active');
+    },
+    goHome: function() {
+      return $('#navItems').collapse('hide');
     }
   });
 });
