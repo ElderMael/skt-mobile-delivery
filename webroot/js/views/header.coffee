@@ -5,11 +5,13 @@ define ['backbone', 'handlebars', 'appTemplates'], (Backbone, Handlebars, templa
       this.model = {}
 
     events :
-      'click #navItems > ul > li': 'collapseMobileMenu'
+      'click #navItems > ul > li, .branding': 'collapseMobileMenu'
 
     render: ->
       this.$el.html this.template this.model
       return this
 
-    collapseMobileMenu: ->
+    collapseMobileMenu: (e) ->
       $('#navItems').collapse('toggle');
+      $('#navItems > ul > li').removeClass 'active'
+      $(e.currentTarget).addClass 'active'

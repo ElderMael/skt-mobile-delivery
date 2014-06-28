@@ -28,6 +28,8 @@ body {
   padding: 20px 15px 15px 15px; }
   .navbar-nav > li > a:hover {
     padding: 18px 15px 1px 15px; }
+  .navbar-nav > li.active > a {
+    background-color: white; }
 
 .menu-items {
   display: block;
