@@ -1,9 +1,14 @@
+@import "commons"
+
 #sap
-  & article
-    & header
-      @extend .section-header
-    & main
-      font-family: $body-copy-font
-      & blockquote, q
-        font-family: $title-font
-        font-size: 2em
+  & header
+    @extend .section-header
+    h2
+      margin-bottom: 30px
+      padding-left: 12%
+      font-family: $section-font
+  & main
+    font-family: $body-copy-font
+    & blockquote, q
+      font-family: $title-font
+      font-size: 1.5em

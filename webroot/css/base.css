@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Yanone+Kaffeesatz);
-.section-header, .applicationsMaximized header, #sap article header {
-  font-face: "Yanone Kaffeesatz", sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Yanone+Kaffeesatz);
+.section-header, .applicationsMaximized header, #sap header {
+  font-face: "Oswald", sans-serif;
   color: white;
   background-color: #3f1e46;
   padding-top: 15px;
@@ -126,8 +127,19 @@ h2.nimble {
   #portfolio > article > main {
     font-family: "Doppio One", sans-serif; }
 
-#sap article main {
+.section-header, .applicationsMaximized header, #sap header {
+  font-face: "Oswald", sans-serif;
+  color: white;
+  background-color: #3f1e46;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+#sap header h2 {
+  margin-bottom: 30px;
+  padding-left: 12%;
+  font-family: "Oswald", sans-serif; }
+#sap main {
   font-family: "Doppio One", sans-serif; }
-  #sap article main blockquote, #sap article main q {
+  #sap main blockquote, #sap main q {
     font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 2em; }
+    font-size: 1.5em; }
