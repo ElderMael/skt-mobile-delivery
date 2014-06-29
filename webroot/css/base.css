@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Yanone+Kaffeesatz);
 body {
   padding: 60px 0px 80px 0px;
   background-color: white; }
@@ -14,9 +14,8 @@ body {
   margin-top: 10px; }
 
 #stk-corporate-vid {
-  width: 40%;
-  height: 400px;
-  max-height: 400px; }
+  width: 600px;
+  height: 500px; }
 
 #menuNav {
   background-color: lightgray;
@@ -80,7 +79,7 @@ body {
   #menuNav {
     overflow: visible; } }
 .applicationsMaximized header {
-  font-face: "Bree Serif", serif;
+  font-face: "Yanone Kaffeesatz", sans-serif;
   color: white;
   background-color: #3f1e46;
   padding-top: 15px;
@@ -122,6 +121,6 @@ h2.nimble {
     background-color: lightgray;
     color: black; }
   #portfolio > article > header {
-    font-family: "Bree Serif", serif; }
+    font-family: "Yanone Kaffeesatz", sans-serif; }
   #portfolio > article > main {
     font-family: "Doppio One", sans-serif; }

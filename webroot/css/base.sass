@@ -1,13 +1,16 @@
+// Three sans-serif because why not
 $section-font: 'Oswald', sans-serif
-$title-font: 'Bree Serif', serif
+$title-font: 'Yanone Kaffeesatz', sans-serif
 $body-copy-font: 'Doppio One', sans-serif
 
-$phone-landscape: 480px
-$tablet-landscape: 767px
+// Screen sizes for target devices
+$phone-portrait: 480px
+$phone-landscape: 767px
 $tablet-and-desktop: 768px 979px
 $full-desktop: 1200px
 
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Bree+Serif)
+// Google Fonts niceness
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Yanone+Kaffeesatz)
 
 body
   padding: 60px 0px 80px 0px
@@ -24,9 +27,8 @@ body
   margin-top: 10px
 
 #stk-corporate-vid
-  width: 40%
-  height: 400px
-  max-height: 400px
+  width: 600px
+  height: 500px
 
 @import "nav"
 @import "main"
