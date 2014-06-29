@@ -20,7 +20,8 @@ body {
 
 #menuNav {
   background-color: lightgray;
-  max-height: 60px; }
+  max-height: 60px;
+  overflow: hidden; }
 
 .navbar-nav > li {
   text-align: center;
@@ -43,6 +44,9 @@ body {
     #navItems > ul > li {
       padding: 0px !important; }
 
+  #menuNav {
+    overflow: visible; }
+
   .navbar-nav > li {
     text-align: center;
     font-size: 1.3em;
@@ -59,6 +63,9 @@ body {
     #navItems > ul > li {
       padding: 0px !important; }
 
+  #menuNav {
+    overflow: visible; }
+
   .navbar-nav > li {
     text-align: center;
     font-size: 1.3em;
@@ -69,8 +76,11 @@ body {
 
   .navbar.navbar-header {
     margin-bottom: 0px; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  #menuNav {
+    overflow: visible; } }
 .applicationsMaximized header {
-  font-face: "Oswald", sans-serif;
+  font-face: "Bree Serif", serif;
   color: white;
   background-color: #3f1e46;
   padding-top: 15px;
@@ -80,7 +90,7 @@ body {
     padding-left: 12%;
     font-family: "Oswald", sans-serif; }
 .applicationsMaximized main {
-  font-face: "Bree Serif", serif;
+  font-face: "Doppio One", sans-serif;
   background-color: white;
   padding-left: 12%;
   padding-right: 16%;
@@ -112,6 +122,6 @@ h2.nimble {
     background-color: lightgray;
     color: black; }
   #portfolio > article > header {
-    font-family: "Doppio One", sans-serif; }
-  #portfolio > article > main {
     font-family: "Bree Serif", serif; }
+  #portfolio > article > main {
+    font-family: "Doppio One", sans-serif; }

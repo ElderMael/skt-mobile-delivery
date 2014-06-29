@@ -1,10 +1,11 @@
 $section-font: 'Oswald', sans-serif
-$title-font: 'Doppio One', sans-serif
-$body-copy: 'Bree Serif', serif
+$title-font: 'Bree Serif', serif
+$body-copy-font: 'Doppio One', sans-serif
 
-$landscapeWidth: 480px
-$portraitWidth: 767px
-$desktopWidth: 1200px
+$phone-landscape: 480px
+$tablet-landscape: 767px
+$tablet-and-desktop: 768px 979px
+$full-desktop: 1200px
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Doppio+One|Bree+Serif)
 
@@ -29,10 +30,4 @@ body
 
 @import "nav"
 @import "main"
-@import "application-providers"
-
-// Portrait tablet to landscape and desktop
-// @media (min-width: 768px) and (max-width: 979px)
-
-// Desktop
-// @media (min-width: 1200px)
+@import "portfolio"

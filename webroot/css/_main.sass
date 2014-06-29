@@ -1,6 +1,6 @@
 .applicationsMaximized
   & header
-    font-face: $section-font
+    font-face: $title-font
     color: white
     background-color: #3f1e46
     padding-top: 15px
@@ -8,15 +8,15 @@
     h2
       margin-bottom: 30px
       padding-left: 12%
-      font-family: 'Oswald', sans-serif
+      font-family: $section-font
   & main
-    font-face: $body-copy
+    font-face: $body-copy-font
     background-color: white
     padding-left: 12%
     padding-right: 16%
-    font-family: 'Doppio One', sans-serif
+    font-family: $body-copy-font
 
-@media (max-width: $landscapeWidth)
+@media (max-width: $phone-landscape)
   .applicationsMaximized
     & header
       text-align: center
@@ -24,7 +24,7 @@
       text-align: center
       padding: 0px
 
-@media (max-width: $portraitWidth)
+@media (max-width: $tablet-landscape)
   .applicationsMaximized
     & header
       text-align: center

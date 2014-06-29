@@ -1,6 +1,7 @@
 #menuNav
   background-color: lightgray
   max-height: 60px
+  overflow: hidden
 
 .navbar-nav > li
   text-align: center
@@ -17,11 +18,34 @@
   margin-left: auto
   margin-right: auto
 
-@media (max-width: $landscapeWidth)
+@media (max-width: $phone-landscape)
   #navItems
     background-color: white
     & > ul > li
       padding: 0px !important
+
+  #menuNav
+    overflow: visible
+      
+  .navbar-nav > li
+    text-align: center
+    font-size: 1.3em
+    font-weight: 500
+    padding: 20px 15px 15px 15px
+    & > a:hover
+      padding: 20px 15px 15px 15px
+
+  .navbar.navbar-header
+    margin-bottom: 0px
+
+@media (max-width: $tablet-landscape)
+  #navItems
+    background-color: white
+    & > ul > li
+      padding: 0px !important
+
+  #menuNav
+    overflow: visible
 
   .navbar-nav > li
     text-align: center
@@ -34,19 +58,6 @@
   .navbar.navbar-header
     margin-bottom: 0px
 
-@media (max-width: $portraitWidth)
-  #navItems
-    background-color: white
-    & > ul > li
-      padding: 0px !important
-
-  .navbar-nav > li
-    text-align: center
-    font-size: 1.3em
-    font-weight: 500
-    padding: 20px 15px 15px 15px
-    & > a:hover
-      padding: 20px 15px 15px 15px
-
-  .navbar.navbar-header
-    margin-bottom: 0px
+@media (min-width: nth($tablet-and-desktop, 1)) and (max-width: nth($tablet-and-desktop, 2))
+  #menuNav
+    overflow: visible
