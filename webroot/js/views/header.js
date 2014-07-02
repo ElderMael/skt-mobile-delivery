@@ -19,7 +19,8 @@ define(['backbone', 'handlebars', 'appTemplates'], function(Backbone, Handlebars
       return $(e.currentTarget).addClass('active');
     },
     goHome: function() {
-      return $('#navItems').collapse('hide');
+      $('#navItems').collapse('hide');
+      return $('#navItems > ul > li').removeClass('active');
     }
   });
 });

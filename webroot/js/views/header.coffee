@@ -1,4 +1,5 @@
 define ['backbone', 'handlebars', 'appTemplates'], (Backbone, Handlebars, templates)->
+
   Backbone.View.extend
     template: templates['header']
     initialize: ->
@@ -19,3 +20,4 @@ define ['backbone', 'handlebars', 'appTemplates'], (Backbone, Handlebars, templa
 
     goHome: ->
       $('#navItems').collapse('hide');
+      $('#navItems > ul > li').removeClass 'active'
